@@ -89,19 +89,21 @@
 
 			<div id="widget3">
 				<h1>Subscribe</h1>
-
-				 <form role='form' class='form-inline'>
-           			<div class="form-group">
-         			<input type="text" class='form-control' name="email" placeholder="Enter your email" >
-          			<button type="submit" class='btn btn-success'>Submit</button>
-          			</div>
-          		</form>
+				 <div id="emailform">
+			        <form action="/signup" method="post">
+			            <input type="text" name="email"></input>
+			            <input type="submit" value="Submit"></input>
+			        </form>
+			    </div>
 			</div>
 
 			<div id="widget4">
 				<h1>Follow Us</h1>
 					<div id='social-buttons'>
-   						<a href="https://twitter.com/Dept_of_POLIS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> <button class="btn btn-lg btn-twitter"/> Twitter</button> </a>
+   						<a 
+   							href="https://twitter.com/Dept_of_POLIS?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"> 
+   							<button class="btn btn-lg btn-twitter"/> Twitter</button> 
+   						</a>
     					<button class="btn btn-lg btn-facebook">Facebook</button>
     					<button class="btn btn-lg btn-youtube">Youtube</button>
     				</div>
