@@ -19,7 +19,7 @@ def signup():
     print(email_addresses)
     return redirect('/')
 
-@app.route('/emails.html')
+@app.route('/emails')
 def emails():
 	return render_template('emails.html', email_addresses = email_addresses)
 
