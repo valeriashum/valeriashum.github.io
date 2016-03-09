@@ -11,7 +11,8 @@ def hello_world():
 @app.route("/signup", methods = ['POST'])
 def signup():
     email = request.form['email']
-    print("This email address is ' " + email + "'")
+    f=open('emails.txt','w')
+    print("This email address is ' " + email + "'", f)
     return redirect('/')
 
 if __name__ == "__main__":
